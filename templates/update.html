@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+</head>
+<body>
+<h1 class = "text-info text-center">Chromewholesellers LTD </h1>
+{% with messages = get_flashed_messages() %}
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+{% endwith %}
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form action=""method="post">
+
+        <input name ="x" class = "form-control" type="text" placeholder = "enter name "><br><br>
+        <input name ="y" class = "form-control" type="email" placeholder = "enter email "><br><br>
+        <input name ="z" class = "form-control" type="password" placeholder = "enter password "><br><br>
+        <input name ="x" class = "btn btn-outline-info btn-block" type="submit" placeholder = "register "><br><br>
+            <a class="btn btn-outline-success btn-block" href="/login">login</a>
+
+
+
+
+        </form>
+
+    </div>
+    <div class="col-3"></div>
+</div>
+</body>
+</html>
